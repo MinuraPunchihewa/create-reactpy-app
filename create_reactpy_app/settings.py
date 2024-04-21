@@ -4,7 +4,7 @@ from pydantic_settings import BaseSettings
 
 class CreateReactPyAppSettings(BaseSettings):
     """
-    Configuration for Mthe package.
+    Configuration for the package.
 
     Attributes
     ----------
