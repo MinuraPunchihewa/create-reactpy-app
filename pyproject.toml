@@ -9,6 +9,7 @@ readme = "README.md"
 [tool.poetry.dependencies]
 python = "^3.11"
 click = "^8.1.7"
+cookiecutter = "^2.6.0"
 
 [tool.poetry.scripts]
 create-reactpy-app = 'create_reactpy_app.__main__:main'
