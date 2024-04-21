@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "create-reactpy-app"
+version = "0.1.0"
+description = ""
+authors = ["Minura Punchihewa <minurapunchihewa17@gmail.com>"]
+license = "GPL-3.0"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+click = "^8.1.7"
+cookiecutter = "^2.6.0"
+pydantic-settings = "^2.2.1"
+
+[tool.poetry.scripts]
+create-reactpy-app = 'create_reactpy_app.__main__:main'
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
