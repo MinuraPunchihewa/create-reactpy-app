@@ -6,7 +6,12 @@ from create_reactpy_app.settings import settings
 
 @click.command()
 @click.argument('project_directory')
-@click.argument('backend')
+@click.option(
+    '--backend',
+    '-b',
+    default='flask',
+    help='The backend framework to use. Default is Flask.'
+)
 def main(project_directory, backend):
     """
     This command creates a template for a Reactpy app.
