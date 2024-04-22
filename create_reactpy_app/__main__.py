@@ -5,15 +5,19 @@ from create_reactpy_app.settings import settings
 
 
 @click.command()
-@click.argument('app_name')
-def main(app_name):
+@click.argument('project_directory')
+@click.argument('backend')
+def main(project_directory, backend):
     """
     This command creates a template for a Reactpy app.
     """
 
     cookiecutter(
         settings.COOKIECUTTER_REPO_URL,
-        extra_context={'app_name': app_name},
+        extra_context={
+            'project_directory': project_directory,
+            'backend': backend
+        },
         no_input=True
     )
                 
