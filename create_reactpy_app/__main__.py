@@ -13,7 +13,8 @@ def main(app_name):
 
     cookiecutter(
         settings.COOKIECUTTER_REPO_URL,
-        extra_context={'app_name': app_name}
+        extra_context={'app_name': app_name},
+        no_input=True
     )
                 
 
