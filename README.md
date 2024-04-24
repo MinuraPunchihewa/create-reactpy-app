@@ -1,6 +1,6 @@
 # Create ReactPy App
 
-This is create-react-app for your ReactPy projects!
+This is `create-react-app` for your ReactPy projects!
 
 ## Creating an App
 
@@ -33,6 +33,8 @@ cd my-app
 ```bash
 pip install -r requirements.txt
 ```
+
+> Note: If create-reactpy-app was installed in a virtual environment, this does not need to be done on the same environment. You can switch to a different environment and install the dependencies there.
 
 5. Start the server; depending on the backend framework you chose, you can run the following commands:
 
