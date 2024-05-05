@@ -72,5 +72,5 @@ gunicorn main:app
 uvicorn main:app
 ```
 
-# License
+## License
 This code is licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE.txt for details.
