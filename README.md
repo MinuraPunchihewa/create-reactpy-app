@@ -60,13 +60,13 @@ make run
 
 Or, depending on the backend framework you chose, you can run the following commands:
 
-    Flask:
+    > Flask:
 
 ```bash
 gunicorn main:app
 ```
 
-    FastAPI or Starlette:
+    > FastAPI or Starlette:
 
 ```bash
 uvicorn main:app
