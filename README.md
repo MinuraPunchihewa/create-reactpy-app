@@ -12,6 +12,8 @@ make install
 make run
 ```
 
+Now, open http://localhost:8000/ to see your app.
+
 ## Creating an App
 
 You'll need to have Python 3.8 or later installed on your machine. You can use `python --version` to check your current version.
