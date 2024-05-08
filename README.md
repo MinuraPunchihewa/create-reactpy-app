@@ -12,7 +12,7 @@ make install
 make run
 ```
 
-Now, open http://localhost:8000/ to see your app.
+Now, open http://localhost:8000 to see your app.
 
 ## Creating an App
 
@@ -73,6 +73,8 @@ gunicorn main:app
 ```bash
 uvicorn main:app
 ```
+
+Your app will now be running on http://localhost:8000.
 
 ## License
 This code is licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE.txt for details.
