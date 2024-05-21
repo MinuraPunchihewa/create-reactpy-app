@@ -8,7 +8,7 @@ class TestCreateReactPyApp(unittest.TestCase):
     def test_create_reactpy_app_creates_correct_files_and_directories_with_flask_backend(self):
         runner = CliRunner()
         with runner.isolated_filesystem():
-            runner.invoke(main, ['test_project', '--backend', 'flask'])
+            runner.invoke(main, ['test_project'])
 
             # Print the paths of all files and directories in the current directory
             for dirpath, dirnames, filenames in os.walk('.'):
