@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Publish PyPi package
-        uses: code-specialist/pypi-poetry-publish@v1
+        uses: code-specialist/pypi-poetry-publish@v1.2
         with:
           BRANCH: "main"
           PACKAGE_DIRECTORY: "./create_reactpy_app/"
