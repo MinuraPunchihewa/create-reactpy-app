@@ -1,4 +1,5 @@
 import os
+import logging
 import unittest
 from click.testing import CliRunner
 from create_reactpy_app.__main__ import main
@@ -13,9 +14,9 @@ class TestCreateReactPyApp(unittest.TestCase):
             # Print the paths of all files and directories in the current directory
             for dirpath, dirnames, filenames in os.walk('.'):
                 for dirname in dirnames:
-                    print(os.path.join(dirpath, dirname))
+                    logging.info(os.path.join(dirpath, dirname))
                 for filename in filenames:
-                    print(os.path.join(dirpath, filename))
+                    logging.info(os.path.join(dirpath, filename))
 
             with open('test_project/requirements.txt') as f:
                 requirements = f.read()
@@ -29,9 +30,9 @@ class TestCreateReactPyApp(unittest.TestCase):
             # Print the paths of all files and directories in the current directory
             for dirpath, dirnames, filenames in os.walk('.'):
                 for dirname in dirnames:
-                    print(os.path.join(dirpath, dirname))
+                    logging.info(os.path.join(dirpath, dirname))
                 for filename in filenames:
-                    print(os.path.join(dirpath, filename))
+                    logging.info(os.path.join(dirpath, filename))
 
             with open('test_project/requirements.txt') as f:
                 requirements = f.read()
@@ -45,9 +46,9 @@ class TestCreateReactPyApp(unittest.TestCase):
             # Print the paths of all files and directories in the current directory
             for dirpath, dirnames, filenames in os.walk('.'):
                 for dirname in dirnames:
-                    print(os.path.join(dirpath, dirname))
+                    logging.info(os.path.join(dirpath, dirname))
                 for filename in filenames:
-                    print(os.path.join(dirpath, filename))
+                    logging.info(os.path.join(dirpath, filename))
 
             with open('test_project/requirements.txt') as f:
                 requirements = f.read()
