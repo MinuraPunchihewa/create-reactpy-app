@@ -2,7 +2,7 @@ name: Build and publish python package
 
 on:
   release:
-    types: [ published ]
+    types: [published]
 
 jobs:
   publish-service-client-package:
@@ -13,6 +13,6 @@ jobs:
         with:
           PACKAGE_DIRECTORY: "./create_reactpy_app/"
           PYTHON_VERSION: "3.10"
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PUBLISH_REGISTRY_PASSWORD }}
+          ACCESS_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH_REGISTRY_PASSWORD: ${{ secrets.PYPI_TOKEN }}
           PUBLISH_REGISTRY: "https://test.pypi.org/simple/"
