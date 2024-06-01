@@ -4,6 +4,9 @@ import unittest
 from click.testing import CliRunner
 from create_reactpy_app.__main__ import main
 
+# Configure logging
+logging.basicConfig(level=logging.INFO)
+
 
 class TestCreateReactPyApp(unittest.TestCase):
     def setUp(self):
