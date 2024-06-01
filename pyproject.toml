@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "create-reactpy-app"
-version = "0.1.0"
+version = "1.0.0"
 description = ""
 authors = ["Minura Punchihewa <minurapunchihewa17@gmail.com>"]
 license = "GPL-3.0"
