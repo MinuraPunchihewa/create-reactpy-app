@@ -12,7 +12,7 @@ class TestCreateReactPyApp(unittest.TestCase):
     def setUp(self):
         self.runner = CliRunner()
 
-    def test_create_reactpy_app_creates_correct_files_and_directories_with_flask_backend(self):
+    def test_create_reactpy_app_creates_correct_files_and_directories_with_fastapi_backend(self):
         with self.runner.isolated_filesystem():
             self.runner.invoke(main, ['test_project'])
 
@@ -25,7 +25,7 @@ class TestCreateReactPyApp(unittest.TestCase):
 
             with open('test_project/requirements.txt') as f:
                 requirements = f.read()
-            assert 'reactpy[flask]' in requirements
+            assert 'reactpy[fastapi]' in requirements
 
     def test_create_reactpy_app_creates_correct_files_and_directories_with_starlette_backend(self):
         with self.runner.isolated_filesystem():
@@ -42,9 +42,9 @@ class TestCreateReactPyApp(unittest.TestCase):
                 requirements = f.read()
             assert 'reactpy[starlette]' in requirements
 
-    def test_create_reactpy_app_creates_correct_files_and_directories_with_fastapi_backend(self):
+    def test_create_reactpy_app_creates_correct_files_and_directories_with_flask_backend(self):
         with self.runner.isolated_filesystem():
-            self.runner.invoke(main, ['test_project', '--backend', 'fastapi'])
+            self.runner.invoke(main, ['test_project', '--backend', 'flask'])
 
             # Print the paths of all files and directories in the current directory
             for dirpath, dirnames, filenames in os.walk('.'):
@@ -55,7 +55,7 @@ class TestCreateReactPyApp(unittest.TestCase):
 
             with open('test_project/requirements.txt') as f:
                 requirements = f.read()
-            assert 'reactpy[fastapi]' in requirements
+            assert 'reactpy[flask]' in requirements
 
 
 if __name__ == '__main__':
