@@ -1,5 +1,6 @@
 # Create ReactPy App
-Copyright © 2023 Minura Punchihewa
+
+Copyright © 2024 Minura Punchihewa
 
 This is `create-react-app` for your ReactPy projects!
 
@@ -29,10 +30,10 @@ pip install create-reactpy-app
 2. Create a new project:
 
 ```bash
-create-reactpy-app my-app --backend flask
+create-reactpy-app my-app
 ```
 
-> Note: You can replace `flask` with `fastapi` or `starlette` if you want to use those frameworks instead. The default is already set to `flask`.
+> Note: You can specify the backend framework you want to use by passing the `--backend` flag. The available options are `fastapi`, `starlette` and `flask`. If you don't specify a backend, FastAPI will be used by default.
 
 3. Change directory to your new project:
 
@@ -62,19 +63,20 @@ make run
 
 Or, depending on the backend framework you chose, you can run the following commands:
 
-- Flask:
-
-```bash
-gunicorn main:app
-```
-
 - FastAPI or Starlette:
 
 ```bash
 uvicorn main:app
 ```
 
+- Flask:
+
+```bash
+gunicorn main:app
+```
+
 Your app will now be running on http://localhost:8000.
 
 ## License
+
 This code is licensed under the GNU GENERAL PUBLIC LICENSE. See LICENSE.txt for details.

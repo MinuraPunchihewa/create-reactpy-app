@@ -9,8 +9,8 @@ from create_reactpy_app.settings import settings
 @click.option(
     '--backend',
     '-b',
-    default='flask',
-    help='The backend framework to use. Default is Flask.'
+    default='fastapi',
+    help='The backend framework to use. Default is FastAPI.'
 )
 def main(project_directory, backend):
     """
